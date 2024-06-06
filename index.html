@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/22bb8ce8d9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="./img/images/logo.png" class="logo" srcset=""> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Serices</a></li>
+                    <li><a href="#portfoilo">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm </h1>
+                <h2><span>Mahek P. Gondaliya</span></h2>
+                <div class="typing-animation" id="typing"></div>
+            </div>
+            <div class="header-img">
+                
+            </div>
+        </div>
+    </div>
+    <!-- //about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img/images/mahek.jpg" a>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-summery">
+                    <ul class="about-text">
+                        <li>Detail-oriented and innovative IT engineer in web development.</li>
+                        <li>Adept at developing scalable, high-performance web applications using modern frameworks and
+                            technologies.</li>
+                        <li> Proficient in HTML, CSS, JavaScript, React, Node.js, and various other web technologies.
+                        </li>
+                    </ul>
+                    </p>
+
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Certificate')">Certificate</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Problem-solving</span><br> problem-solving with object oriented programming in
+                                Java </li>
+                            <li><span>Web Development</span><br> Creating website and Designing </li>
+                            <li><span>App Development</span><br> Creating App</li>
+                        </ul>
+                    </div>
+                    <div id="Certificate" class="tab-contents">
+                        <ul>
+                            <li><span>Data Analytics</span><br>IBM SkillsBuild micro-Internship on Data Analytics </li>
+                            <li><span>Google Digital Unlocked</span><br>The Fundamentals of Digital marketing</li>
+                            <li><span>Digital Electronics</span><br> Area of Electronics and communication engineering
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>2022-2026</span><br>Graduation - L.D. College Of Engineering (Ahmedabad)</li>
+                            <li><span>2020-2022</span><br>Higher Education - Shree V.D. Patel Higher Secondary School
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..............services.............. -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Creating Website</h2>
+                    <p>Creating websites involves combining technical skills in HTML, CSS, and JavaScript with design
+                        principles to build user-friendly, visually appealing, and functional online spaces.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Design</h2>
+                    <p>UI design focuses on creating visually appealing and user-friendly interfaces that facilitate
+                        seamless interaction between users and digital products.</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Develop App</h2>
+                    <p>App development involves designing, creating, and maintaining software applications for various
+                        platforms, such as mobile devices and desktops.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ...............portfoilo............ -->
+
+    <div id="portfoilo">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="./img/images/weather.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Weather Website</h3>
+                        <p>A weather website provides real-time updates and forecasts, offering information on
+                            temperature, precipitation, wind speed, and other meteorological conditions for various
+                            locations.</p>
+                        <a href="http://weatherforearth.netlify.app"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/images/collegestudentportal.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>College Student Portal</h3>
+                        <p>The college student portal website serves as a centralized platform where students can access
+                            their academic records, course materials, and administrative services. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/images/spotify.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Spotify-Clone Website</h3>
+                        <p>potify's website offers a seamless experience for streaming music and podcasts, allowing
+                            users to explore a vast library of tracks and curated playlists.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------contact------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email">
+                        <textarea name="message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
